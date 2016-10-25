@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWidget</class>
+ <widget class="QWidget" name="MyWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyWidget</string>
+  </property>
+  <widget class="QLineEdit" name="MyLineEdit1">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>80</y>
+     <width>113</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Source</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="MyLineEdit2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>130</y>
+     <width>113</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Destination</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="MyPushButton1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="MyPushButton2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MyLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>26</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>MyPushButton2</sender>
+   <signal>clicked()</signal>
+   <receiver>MyLineEdit1</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>226</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MyPushButton2</sender>
+   <signal>clicked()</signal>
+   <receiver>MyLineEdit2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>226</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
